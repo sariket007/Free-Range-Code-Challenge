@@ -1,0 +1,180 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+:root {
+    --white: #fff;
+    --darkblue: #1b4965;
+    --lightblue: #edf2f4;
+  }
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+  }
+  h2.blockTitle {
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    margin: 30px 0;
+  }
+
+  p.blockDes {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+
+  .pl-3{
+    padding-left: 30px;
+  }
+  .pr-3{
+    padding-right: 30px;
+  }
+  .resultantFilter{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 2px;
+  }
+  .formTxtField.field{
+    width: 300px;
+  }
+  .field input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width:100%;
+    height: 57px;
+    border: unset;
+    border-radius: 6px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+  .selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+
+    min-width: 250px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+  
+  .selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 6px;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 57px;
+    margin: 0px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+  /* TABLE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .table-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--darkblue);
+    border-radius: 40px;
+  }
+  
+  .table-wrapper::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 40px;
+  }
+  
+  .table-wrapper table {
+    margin: 25px 0 20px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .table-wrapper table th,
+  .table-wrapper table td {
+    padding: 10px;
+    min-width: 75px;
+    border: 1px solid #000;
+  }
+  .table-wrapper table tr.noData td{
+    border: none;
+    text-align: center;
+  }
+  .table-wrapper table tr td.bookImg img{
+    width: 100px;
+    border-radius: 50%;
+  }
+  .table-wrapper table th {
+    color: var(--white);
+    background: var(--darkblue);
+  }
+  
+  .table-wrapper table tbody tr:nth-of-type(even) > * {
+    background: var(--lightblue);
+  }
+  
+  .table-wrapper table td:first-child {
+    /* display: grid; */
+    grid-template-columns: 25px 1fr;
+    grid-gap: 10px;
+    text-align: left;
+  }
+  @media (max-width:626px){
+    .formTxtField.field {
+        width: 100%;
+      }
+    .resultantFilter {
+        display: block;
+
+    }
+    .field input{
+        width:100%;
+        margin-bottom: 10px;
+        padding: 13px 16px;
+    }
+    .selectdiv select{
+        max-width: 100%;;
+    }
+   
+
+  }
