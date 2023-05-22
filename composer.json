@@ -1,0 +1,29 @@
+{
+    "name": "ss/book-showcase-block",
+    "description": "The plugin for book showcase using gutenburg block.",
+    "type": "wordpress-plugin",
+    "version": "1.0.0-alpha.1",
+    "require": {
+      "wp-coding-standards/wpcs": "^2.3",
+      "phpcompatibility/phpcompatibility-wp": "^2.1"
+    },
+    "autoload": {
+      "files": [
+        "inc/setup.php"
+      ],
+      "psr-4": {
+        "SS\\BOOKSHOWCASE\\": "inc/"
+      },
+      "classmap": [ "inc/" ]
+    },
+    "scripts": {},
+    "require-dev": {
+      "wp-coding-standards/wpcs": "^2.3",
+      "phpcompatibility/phpcompatibility-wp": "^2.1"
+    },
+    "config": {
+      "allow-plugins": {
+        "dealerdirect/phpcodesniffer-composer-installer": true
+      }
+    }
+}
