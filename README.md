@@ -21,4 +21,4 @@ Description : fro describing block.
 book category : be selective with a particular page for particular type of book.
 Show filter option :  Required. Default : Yes. this option enable / disable filter option will be show or not.
  
-
+ Create entries in books and books categories to get the better results.
