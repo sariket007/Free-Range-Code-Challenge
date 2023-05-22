@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Book Showcase Block.
- * Plugin URI: https://github.com/sariket007/free-code-challange
+ * Plugin URI: https://github.com/sariket007/Free-Range-Code-Challenge
  * Description: The plugin for book showcase using gutenburg block.
  * Author: Sumit Sariket
  * Author URI: https://github.com/sariket007
