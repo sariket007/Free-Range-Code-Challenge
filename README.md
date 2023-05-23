@@ -3,7 +3,7 @@ WordPress Plugin to extend ACF in Gutenberg block creation
 
 # Plugin Installtion 
 Clone the repo in wordpress plugin in folder and just activate.
-can run composer update from plugin root directory.
+run composer update from plugin directory.
 
 # Features
 A custom post type 'books' will be added.
